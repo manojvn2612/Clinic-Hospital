@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <title>Home | Medical - convergnite</title>
+    <link rel="icon" href="images/home.png" type="image/x-icon" rel="preload">
+    <meta charset='UTF-8',name="viewport" content="width=device-width, initial-scale=1" lang="en">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Asap", sans-serif;
+      }
+      body
+      {
+        background: #42455a;
+      }
+      section
+      {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section:nth-child(1)
+      {
+          color: #e0ffff;
+      }
+      section:nth-child(2)
+      {
+        color: #42455a;
+        background: #e0ffff;
+      } 
+      section:nth-child(3)
+      {
+        color: #e0ffff;
+      }
+      section:nth-child(4)
+      {
+        color: #42455a;
+        background: #e0ffff;
+      }
+      section:nth-child(5)
+      {
+        color:#e0ffff;
+      }
+      section .container
+      {
+        margin: 100px;
+      }
+      section h1
+      {
+        font-size: 3rem;
+        font-style: italic;
+        margin: 20px;
+        align-content: center;
+      }
+      section h2
+      {
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      section .text-container
+      {
+        display: flex;
+      }
+      section .text-container .text-box
+      {
+        margin: 20px;
+        padding: 20px;
+        background: #00c2cb;
+      }
+      section .text-container .text-box_contact_me
+      {
+        margin: 20px;
+        padding: 20px;
+        background: #ffffff00;
+      }
+      section .text-container .text-box h3
+      {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 900px)
+      {
+        section h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+      section .text-container
+      {
+        flex-direction: column;
+      }
+      }  
+      .reveal
+      {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+      } 
+      .reveal.active
+      {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .button
+      {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .button_sec1{border-radius: 8px;}.button_sec1:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+      .button_sec2{border-radius: 8px;}.button_sec2:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+      .button_sec3{border-radius: 8px;}.button_sec3:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Hi, Welcome to converginite medical
+        <br> Please scroll down to see more &#8595;
+        <img src="https://lh3.googleusercontent.com/BMKlwqY3oLUa-INaw0wLgFkuQ-_UHpnTzANUbTSnwx98BYfL4ItZY-N3LKyJ4trF7PnY043zF9S0CVQOaeWJ9EMGW9gvqnbfXRx_6veyjXbfkIbuuwHw=w350-rw-e365-v1" width="100" alt="phone">
+      </h1>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2>About Application</h2>
+        <div class="text-container">
+          <img src="images/icon.png" width='100' alt='about Application'>
+          <div class="text-box">
+            <h3></h3>
+            <p>You can use games,hospital and many more <br> use only for pc</p>
+          </div>
+          <button class="button button_sec1"><a href="manual made.html" onclick="location.href=this.href+'?file='+val;return false;" style='color:white; text-decoration: none;'>Information &rarr; </a></button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2>Download</h2>
+        <div class="text-container">
+          <img href='#vfssf' src="myqr.svg" alt="image">
+          <button class="button button_sec2"><a id="link" href="project.exe"></a>Download &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2>About Company</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>About me</h3>
+            <p>
+              I'm Manoj Nayak<br>Designer of this app<br>For more Information click the button for more Information <br>copyright of converginite.
+            </p>
+          </div>
+          <button class="button button_sec3" > <a href="About.html" style="color: white; text-decoration: wavy;">About me &rarr;</a> </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2>review</h2>
+        <div class="text-container">
+          <div class="text-box_contact_me">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var val="main"
+      function reveal()
+      {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++)
+        {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible)
+          {
+            reveals[i].classList.add("active");
+          }
+          else
+          {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+    </script>
+    <!file download>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+      $(document).ready(function (){
+			$("#link").click(function (e){
+				e.preventDefault();				
+				window.location.href
+					= "E:\MANOJ\dav\school apps\school\OneDrive - DAV PUBLIC SCHOOL NEW PANVEL\computer\project\project.exe";
+        });
+      });
+    </script>
+  </body>
+</html>
